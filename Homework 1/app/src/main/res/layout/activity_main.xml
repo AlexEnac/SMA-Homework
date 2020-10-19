@@ -13,5 +13,49 @@
         android:text="Open Dialog"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btn_empty_activity"
+        android:layout_above="@+id/dialog_button"/>
+
+    <RelativeLayout
+        android:id="@+id/hidden_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:layout_below="@+id/dialog_button">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Enter text here"
+            android:id="@+id/sec_tv"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sec_tv"
+            android:id="@+id/main_et"
+            android:layout_centerHorizontal="true"
+            android:width="100dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/main_et"
+            android:text="ok"
+            android:id="@+id/ok_btn"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ok_btn"
+            android:layout_centerHorizontal="true"
+            android:text="cancel"
+            android:id="@+id/cancel_btn"/>
+
+    </RelativeLayout>
 
 </RelativeLayout>

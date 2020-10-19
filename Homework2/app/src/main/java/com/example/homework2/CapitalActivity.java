@@ -27,11 +27,6 @@ public class CapitalActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(capitalAdapter);
         addBtn = findViewById(R.id.btn_add);
-        setOnClickLister();
-
-    }
-
-    private void setOnClickLister(){
         addBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
